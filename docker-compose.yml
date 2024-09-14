@@ -1,0 +1,6 @@
+﻿services:
+  sortingalgorithms:
+    image: sortingalgorithms
+    build:
+      context: .
+      dockerfile: SortingAlgorithms/Dockerfile
