@@ -2,10 +2,9 @@ namespace SortingAlgorithms.Algorithms;
 
 public class InsertionSortAlgorithm
 {
-    public static int[] Sort(int[] array)
+    public static void Sort(int[] array, int length)
     {
-        var n = array.Length;
-        for (var i = 1; i < n; i++)
+        for (var i = 1; i < length; i++)
         {
             var key = array[i];
             var j = i - 1;
@@ -16,6 +15,5 @@ public class InsertionSortAlgorithm
             }
             array[j + 1] = key;
         }
-        return array;
     }
 }

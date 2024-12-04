@@ -2,12 +2,11 @@ namespace SortingAlgorithms.Algorithms;
 
 public static class BubbleSortAlgorithm
 {
-    public static int[] Sort(int[] array)
+    public static void Sort(int[] array, int length)
     {
-        var n = array.Length;
-        for (var i = 0; i < n - 1; i++)
+        for (var i = 0; i < length - 1; i++)
         {
-            for (var j = 0; j < n - i - 1; j++)
+            for (var j = 0; j < length - i - 1; j++)
             {
                 if (array[j] > array[j + 1])
                 {
@@ -15,6 +14,5 @@ public static class BubbleSortAlgorithm
                 }
             }
         }
-        return array;
     }
 }
